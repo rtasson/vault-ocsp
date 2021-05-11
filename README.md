@@ -25,8 +25,9 @@ Building Vault OCSP
 ```bash
 git clone https://github.com/T-Systems-MMS/vault-ocsp.git
 cd vault-ocsp
-go get
+go mod init
 go build -o vault-ocsp
+./test.sh  # requires Vault, jq, and openssl. Run this only if you are not already running vault on localhost.
 ```
 
 Running Vault OCSP
