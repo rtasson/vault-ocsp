@@ -2,3 +2,5 @@
 *.pem
 vault-ocsp
 vendor/
+root.json
+leaf.json
