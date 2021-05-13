@@ -1,4 +1,5 @@
 .idea/
+*.swp
 *.pem
 vault-ocsp
 vendor/
