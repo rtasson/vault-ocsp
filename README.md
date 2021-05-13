@@ -1,6 +1,8 @@
 Vault OCSP
 ==========
 
+![vault-ocsp test workflow](https://github.com/rtasson/vault-ocsp/actions/workflows/test.yml/badge.svg)
+
 Vault OCSP provides OCSP support for
 [Hashicorp Vault](https://www.vaultproject.io/)
 [PKI backends](https://www.vaultproject.io/docs/secrets/pki/index.html)
@@ -22,16 +24,19 @@ BSD 2-clause "Simplified" License
 Building Vault OCSP
 -------------------
 
+This repository publishes [a Docker image](https://github.com/users/rtasson/packages/container/package/vault-ocsp) you can use, but for local development these steps produce an executable.
+
 ```bash
 git clone https://github.com/T-Systems-MMS/vault-ocsp.git
 cd vault-ocsp
-go mod init
 go build -o vault-ocsp
 ./test.sh  # requires Vault, jq, and openssl. Run this only if you are not already running vault on localhost.
 ```
 
 Running Vault OCSP
 ------------------
+
+This repository publishes [a Docker image](https://github.com/users/rtasson/packages/container/package/vault-ocsp) you can use. The ENTRYPOINT is set to `vault-ocsp`, though you will additionally need to provide arguments.
 
 Vault OCSP is helpful:
 
