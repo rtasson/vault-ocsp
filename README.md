@@ -17,10 +17,6 @@ License
 
 Vault OCSP is licensed under the Mozilla Public License 2.0.
 
-The file `vendor/github.com/cloudflare/cfssl/ocsp/responder.go` is
-copied from Cloudflare's cfssl repository and is licensed under cfssl's
-BSD 2-clause "Simplified" License
-
 Building Vault OCSP
 -------------------
 
